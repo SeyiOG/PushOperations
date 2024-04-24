@@ -1,6 +1,6 @@
 import pageObjects from "../page_objects/pages.js";
 
-describe('Verify Candidate Details Tests - Recruitment', () => {
+describe('Verify User Details Tests - Admin', () => {
     
     beforeEach(() => {
         
