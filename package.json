@@ -9,6 +9,7 @@
   "author": "Emmanuel",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.8.1"
+    "cypress": "^13.8.1",
+    "cypress-xpath": "^2.0.1"
   }
 }

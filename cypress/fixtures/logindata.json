@@ -1,17 +1,4 @@
-[
 {
     "username": "Admin",
-    "password": "admin123",
-    "expected": "Dashboard"
-},
-{
-    "username": "Testfalse",
-    "password": "admin123false",
-    "expected": "Invalid credentials"
-},
-{
-    "username": "Admin",
-    "password": "abc",
-    "expected": "Invalid credentials"
+    "password": "admin123"
 }
-]
