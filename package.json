@@ -1,0 +1,14 @@
+{
+  "name": "pushoperations",
+  "version": "1.0.0",
+  "description": "Push Operations Automation Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmanuel",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.8.1"
+  }
+}
