@@ -2,9 +2,9 @@ import pageObjects from "../page_objects/pages.js"
 
 describe('viewAndVerifyProjectTimeReport Tests', () => {
     beforeEach(() => {
-        cy.fixture('logindata').then((data) => {
+        cy.fixture('loginData').then((data) => {
             cy.visit("https://opensource-demo.orangehrmlive.com/")
-            pageObjects.loginHook(data.username, data.password)
+            pageObjects.validLoginHook(data.username, data.password)
         })
     })
 
@@ -12,8 +12,8 @@ describe('viewAndVerifyProjectTimeReport Tests', () => {
     
     it('Validate that the expected activities are listed', () => {
         pageObjects.openTimeSection()
-        pageObjects.generateReport()
-        pageObjects.assertActivities()
+        pageObjects.generateProjectReport()
+        pageObjects.assertProjectActivities()
     });
 });
 

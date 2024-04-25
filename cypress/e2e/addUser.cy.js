@@ -4,15 +4,15 @@ describe('Add User Tests - Admin', () => {
     
     beforeEach(() => {
         
-        cy.fixture('logindata').then((data1) => {
+        cy.fixture('loginData').then((data1) => {
             cy.visit('https://opensource-demo.orangehrmlive.com/');                     //Launch the application                                       
-            pageObjects.loginHook(data1.username, data1.password)
+            pageObjects.validLoginHook(data1.username, data1.password)
         })
     })
 
 
     it('Validate new user creation - Admin', () => {
-        cy.fixture('adduser').then((data2) => {
+        cy.fixture('addUser').then((data2) => {
             pageObjects.openAdmin()
             pageObjects.createAdminUser(data2.usernameAdmin, data2.passwordAdmin)
             pageObjects.assertSuccess()
@@ -21,7 +21,7 @@ describe('Add User Tests - Admin', () => {
 
 
     it('Validate new user creation - ESS', () => {
-        cy.fixture('adduser').then((data2) => {
+        cy.fixture('addUser').then((data2) => {
             pageObjects.openAdmin()
             pageObjects.createEssUser(data2.usernameEss, data2.passwordEss)
             pageObjects.assertSuccess()

@@ -4,9 +4,9 @@ describe('Verify User Details Tests - Admin', () => {
     
     beforeEach(() => {
         
-        cy.fixture('logindata').then((data1) => {
+        cy.fixture('loginData').then((data1) => {
             cy.visit("https://opensource-demo.orangehrmlive.com/")
-            pageObjects.loginHook(data1.username, data1.password)
+            pageObjects.validLoginHook(data1.username, data1.password)
         })
     })
 

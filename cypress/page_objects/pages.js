@@ -16,7 +16,7 @@ class pageObjects
         cy.get(".oxd-topbar-header-breadcrumb > .oxd-text").should('be.visible')
     }
     
-    loginHook(username, password){
+    validLoginHook(username, password){
         this.enterUsername(username)
         this.enterPassword(password)
         this.clickSubmit()
@@ -47,7 +47,7 @@ class pageObjects
             cy.get('.oxd-button--secondary').click()
     }
 
-    assertSuccess(){
+    assertSuccess(){                                        
         cy.get(".oxd-toast-container").should('be.visible')//.contains('Success')
     }
 
@@ -86,7 +86,7 @@ class pageObjects
         cy.get(':nth-child(4) > .oxd-main-menu-item').click()
     }
 
-    generateReport(){
+    generateProjectReport(){
         cy.get('.oxd-topbar-body-nav > ul > :nth-child(3)').click()
         cy.get(':nth-child(1) > .oxd-topbar-body-nav-tab-link').click()
         cy.get("input[placeholder='Type for hints...']").type('ASF')
@@ -96,15 +96,17 @@ class pageObjects
         cy.get('.oxd-button').click()
     }
 
-    assertActivities(){
+    assertProjectActivities(){
         cy.get(".inner-content-table .vertical-inner .rgRow:first-child .cell-action").should('be.visible').and('have.text', 'Bug Fixes')
         cy.get(".inner-content-table .vertical-inner .rgRow:nth-child(2) .cell-action").should('be.visible').and('have.text', 'Feature Development')
         cy.get(".inner-content-table .vertical-inner .rgRow:nth-child(3) .cell-action").should('be.visible').and('have.text', 'Implementation')
         cy.get(".inner-content-table .vertical-inner .rgRow:nth-child(4) .cell-action").should('be.visible').and('have.text', 'QA Testing')
         cy.get(".inner-content-table .vertical-inner .rgRow:nth-child(5) .cell-action").should('be.visible').and('have.text', 'Requirement Gathering')
-        cy.get(".inner-content-table .vertical-inner .rgRow:nth-child(6) .cell-action").should('be.visible').contains('Support')  //Typo on this element as Maintenance is not correctly spelt
+        cy.get(".inner-content-table .vertical-inner .rgRow:nth-child(6) .cell-action").should('be.visible').contains('Support &')  //Typo on this element as Maintenance is not correctly spelt
     }
-    
+    confirmNoLogin(){
+        cy.get(".oxd-text.oxd-text--p.oxd-alert-content-text").should('be.visible')
+    }
 }
 
 module.exports = new pageObjects();

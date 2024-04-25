@@ -1,4 +1,6 @@
 {
     "username": "Admin",
-    "password": "admin123"
+    "password": "admin123",
+    "invalidUsername": "RodeoIBTC",
+    "invalidPassword": "admin1912"
 }
