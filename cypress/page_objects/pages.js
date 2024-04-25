@@ -1,4 +1,8 @@
-class pageObjects 
+/*
+    Created a class called pageObjects where all the element interactions are taking place.
+*/
+
+class pageObjects                                                       
 {
     enterUsername(username){
         cy.get("input[name='username']").type(username)
@@ -109,4 +113,4 @@ class pageObjects
     }
 }
 
-module.exports = new pageObjects();
+module.exports = new pageObjects();         //command to export the pageObjects class from pages.js file
