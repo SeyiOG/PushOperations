@@ -3,12 +3,13 @@
 Documentation:
 ### Framework explained
 
-* The framework is running on Cypress 13 .8.1.
+* The framework is running on Cypress 13.8.1.
 * Used the Page Object Model for the tests.
 * The test cases are contained in the folder  `cypress/e2e/` 
-* The test elements are in a separate file `cypress/page_objectspages.js/` where all the interactions are done and imported by spec files contained in the test files.
+* The test elements are in a separate file `cypress/page_objects/pages.js/` where all the interactions are done and imported by spec files contained in the test files.
 * This is to make test cases and test steps more readable and to help with code reusability.
 * Reporting dependency is Cypress Mochawesome Reporter - version 3.8.2
+* Programming Language is are written in JavaScript.
 
 
 ### Prerequisite
