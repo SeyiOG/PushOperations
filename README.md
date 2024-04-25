@@ -1,10 +1,11 @@
-# PushOperations Coding Challenge
+# PushOperations Coding Challenge submission - Emmanuel Ogunnubi
 # OrangeHRM Demo Web App
 Documentation:
 Setup:
 
 Cypress - version 13.8.1
 Cypress Mochawesome Reporter - version 3.8.2
+
 Wrote out test elements in a separate file to make test cases and test steps more readable and to help with code reusability.
 To run the tests in headless mode (command line), enter the following in the terminal: npx cypress run 
 To run the tests in headed mode (Graphical User interface), enter the following in the terminal: npx cypress run --headed
@@ -39,3 +40,6 @@ Test data is stored in json files in the fixtures folder. Test data for creating
 N.B. Typically, valid login data should not be pushed to the repository however, the data is public already so I chose to leave it in the file.
 
 
+General Observations:
+I had to choose the most common employee as there is no way to know the names of the employees available.
+The login credentials are the same but the user who is logged into is not always the same.
