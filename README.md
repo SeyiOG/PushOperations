@@ -48,12 +48,13 @@ N.B. In asserting the deletion success, I had to comment out the text bit on the
 ####Create a Test Script to View and Verify Project Time Report: 
 When this test is run, the before each loop runs before each test case in the suite, and it will launch and log into the application. The test will then navigate the system to the time section and generate the report for the “Apache Software Foundation - ASF - Phase 1” project for the time frame of Jan 1 2021 to Dec 31 2023. 
 System then asserts the following activities are listed:
-● Bug fixes
-● Feature Development
-● Implementation
-● QA Testing
-● Requirement Gathering
-● Support & Maintenance
+* Bug fixes
+* Feature Development
+* Implementation
+* QA Testing
+* Requirement Gathering
+* Support & Maintenance
+
 N.B. There is a typographical error in the report  that spells Maintenance as Maintanence thus why I used cy.contains for just "Support &"
 
 #### Assertions and Reporting:
